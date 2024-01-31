@@ -10,8 +10,11 @@
 // ts.cons - browser undestand only js. so it need transpilation step to do(+1 step) + need discipline 
 // js = simple projec, mediumt to large proje - ts
 // ts.cons can catch a log mistake in compile time
-console.log('ddd');
 let age = 20;
+if (age < 20) {
+    console.log('ddd');
+}
 // age = 's'
 // es5 is spec that browser will accept. JS is implementation
 // ES2016 - depends on where you plan to run the JS
+//# sourceMappingURL=index.js.map

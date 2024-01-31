@@ -13,8 +13,11 @@
 
 
 // ts.cons can catch a log mistake in compile time
-console.log('ddd')
+
 let age: number = 20
+if(age < 20) {
+    console.log('ddd')
+}
 // age = 's'
 
 // es5 is spec that browser will accept. JS is implementation
