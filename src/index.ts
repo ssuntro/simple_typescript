@@ -13,8 +13,8 @@
 
 
 // ts.cons can catch a log mistake in compile time
-
-let age: number = 20
+//ts.primitive and custom type are ref type. memory management is so important and challenging na
+let age: number = 20.5
 if(age < 20) {
     console.log('ddd')
 }
@@ -22,3 +22,9 @@ if(age < 20) {
 
 // es5 is spec that browser will accept. JS is implementation
 // ES2016 - depends on where you plan to run the JS
+
+let sale = 123_456_789
+let course: string = 'tt'
+let is_published: boolean = true
+const aa = 6
+// aa = 7
