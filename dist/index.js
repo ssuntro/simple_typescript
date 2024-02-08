@@ -10,6 +10,7 @@
 // ts.cons - browser undestand only js. so it need transpilation step to do(+1 step) + need discipline 
 // js = simple projec, mediumt to large proje - ts
 // ts.cons can catch a log mistake in compile time
+//ts.primitive and custom type are ref type. memory management is so important and challenging na
 let age = 20.5;
 if (age < 20) {
     console.log('ddd');
@@ -20,4 +21,12 @@ if (age < 20) {
 let sale = 123456789;
 let course = 'tt';
 let is_published = true;
+const aa = 6;
+// aa = 7
+let user = [1, ''];
+let user1 = [1, '', 0]; //more value per tuple less clear intension. consider using union type like custom type insead.
+user1.push(1); //gap. worth to explore
+const small = 1;
+let mySize = 1 /* Size.Medium */;
+console.log(mySize);
 //# sourceMappingURL=index.js.map

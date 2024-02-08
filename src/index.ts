@@ -28,3 +28,20 @@ let course: string = 'tt'
 let is_published: boolean = true
 const aa = 6
 // aa = 7
+
+let user: [number, string] = [1, '']
+let user1: [number, string, number] = [1, '', 0] //more value per tuple less clear intension. consider using union type like custom type insead.
+user1.push(1) //fun fact - gap. worth to explore
+
+
+const small = 1
+
+//PascalCase
+const enum Size { Small = 0, Medium, Large = '' } //fun fact: const and !const impact its js file. const is more optimise code.
+let mySize : Size = Size.Medium
+console.log(mySize)
+
+
+function calculateTax(income: number) {
+    return 0
+}
