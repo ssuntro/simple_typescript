@@ -42,6 +42,11 @@ let mySize : Size = Size.Medium
 console.log(mySize)
 
 
-function calculateTax(income: number) {
-    return 0
+function calculateTax(income: number, taxYear: number = 2022): number {
+    // if((taxYear || 2022) < 50_000) //default param as old js style
+    if(taxYear < 50_000)
+        return income * 1.2
+    return income * 1.3
 }
+
+calculateTax(10_000) //funfact: js you can pass more or less than function signature defined.
